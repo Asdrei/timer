@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>-RaffaMUN-</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    </head>
+
+    <body>
+        <div id="container">
+            <h1 id="title"> TIMER </h1>
+
+            <div id="selector">
+                <p>Select Country: </p>
+                <div id="flags">
+                    {% for country in countries %}
+                    <a href="/{{ country }}"><img class="flag" src="{{ url_for('static', filename='flags/'+country+'.png') }}" /></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

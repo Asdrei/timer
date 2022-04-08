@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>-RaffaMUN-</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    </head>
+
+    <body>
+        <div id="container">
+            <img id="active" src="{{ url_for('static', filename='flags/'+active+'.png')}}">
+
+            <div id="progressbar"></div>
+
+            <div id="controls">
+                <div id="remove" unselectable="on" onclick="rem()">-15s</div> <div id="start" onclick="timer()">start!</div> <div id="add" unselectable="on" onclick="add()">+15s</div>
+            </div>
+
+            <div id="selector">
+                <p>Select Country: </p>
+                <div id="flags">
+                    {% for country in countries %}
+                    <a href="/{{ country }}"><img class="flag" src="{{ url_for('static', filename='flags/'+country+'.png') }}" /></a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    <script src="{{ url_for('static', filename='timer.js')}}" ></script>
+
+    </body>
+</html>
