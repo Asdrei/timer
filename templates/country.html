@@ -10,8 +10,11 @@
     <body>
         <div id="container">
             <img id="active" src="{{ url_for('static', filename='flags/'+active+'.png')}}">
-
-            <div id="progressbar"></div>
+            <div id="progressbar">
+                <div id="greenbar"></div>
+                <div id="time"></div>
+            </div>
+            
 
             <div id="controls">
                 <div id="remove" unselectable="on" onclick="rem()">-15s</div> <div id="start" onclick="timer()">start!</div> <div id="add" unselectable="on" onclick="add()">+15s</div>
