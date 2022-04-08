@@ -26,6 +26,7 @@ function timer() {
             
             if (time <= 0) {
                 document.getElementById("time").innerHTML = "Time is Over!";
+                document.getElementById("greenbar").style.width = "0%";
                 time = 0;
                 clearInterval(timer);
             }
