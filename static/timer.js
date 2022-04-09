@@ -18,6 +18,7 @@ function rem() {
 
 function timer() {
     if (!running) {
+        console.log(running)
         running = true;
         var timer = setInterval(function() {
             time -= 0.1;
@@ -29,11 +30,11 @@ function timer() {
                 document.getElementById("greenbar").style.width = "0%";
                 time = 0;
                 time_tot = 0;
+                running = false;
                 clearInterval(timer);
             }
             else {
                 document.getElementById("time").innerHTML = Math.ceil(time) + 's';
-                running = false;
             }
         }, 100);
     }
