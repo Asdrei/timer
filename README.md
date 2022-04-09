@@ -2,7 +2,7 @@
 
 ## Prerequisites:
 * having the latest python3 version installed (available at https://www.python.org/downloads/)
-* having installed flask using  ```python3 -m pip install flask```
+* having installed flask using  ```python3 -m pip install flask``` or ```python -m pip install flask```
 
 
 ## Installation
