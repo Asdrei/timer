@@ -8,5 +8,5 @@
 ## Installation
 1. open terminal
 2. clone repository using ```git clone https://github.com/Asdrei/timer.git timer && cd timer```
-4. to run the timer execute ```python3 app.py```
+4. to run the timer execute ```python3 app.py``` or ```python app.py``` depending on your installation
 5. follow the address to open the timer in the browser (default is 127.0.0.1:5000)
