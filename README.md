@@ -1,7 +1,7 @@
 # timer
 
 ## Prerequisites:
-* having python3 installed (can be obtained at https://www.python.org/ftp/python/3.10.4/)
+* having the latest python3 version installed (can be obtained at https://www.python.org/downloads/)
 * having installed flask using  ```python3 -m pip install flask```
 
 
