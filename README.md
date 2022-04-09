@@ -6,7 +6,6 @@
 
 
 ## Installation
-###### on MacOS
 1. open terminal
 2. clone repository using ```git clone https://github.com/Asdrei/timer.git timer && cd timer```
 4. to run the timer execute ```python3 app.py```
