@@ -25,7 +25,7 @@ function timer() {
             
             document.getElementById("greenbar").style.width = (1 - (time / time_tot)) * 100 + "%";
             
-            if (time <= 0) {
+            if (time < 0) {
                 document.getElementById("time").innerHTML = "Time is Over!";
                 document.getElementById("greenbar").style.width = "0%";
                 time = 0;
