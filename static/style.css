@@ -55,6 +55,7 @@ html, head, body {
 
 #controls {
     transform: translateX(39.25vw);
+    width: fit-content;
 }
 
 #controls > * {
